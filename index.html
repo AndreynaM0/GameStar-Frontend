@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>GameStar</title>
+</head>
+
+<body>
+    
+    <header class="navbar">
+        <div class="logomarca">
+            <img src="images/logo game star.png" alt="Logo" class="logo">
+            <h1>GameStar</h1>
+        </div>
+
+        <ul>
+            <li id="menuUsuario" style="display: none;">
+                <a href="#">Usuário</a>
+            </li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Suporte</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="bloco_Login">
+            <img src="images/logo game star.png" alt="Logo" class="logo-login">
+            <h2> Bem-vindo ao <br>GameStar</h2>
+
+            <form>
+                <label for="usuario">E-mail Usuário</label>
+                <input type="email" placeholder="E-mail" id="email">
+
+                <label for="senha">Senha</label>
+                <input type="senha" placeholder="Senha">
+
+                <div class="containerBotao"><button type="submit">Entrar</button></div>
+            </form>
+
+            <p>
+                Não tem conta? 
+                <a href="pages/cadastroUsuario.html">Crie uma</a>
+            </p>
+
+        </div>
+    </main>
+
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>
+
