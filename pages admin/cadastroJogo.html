@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/Cadastro-Avaliacao.css">
+    <link rel="icon" type="image/png" href="../images/logo game star.png">
+    <title>GameStar</title>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logomarca">
+            <img src="../images/logo game star.png" alt="Logo" class="logo">
+            <h1>GameStar</h1>
+        </div>
+
+        <div class="barraDePesquisa">
+            <input type="text" placeholder="Buscar" id="barraDeBusca">
+        </div>
+
+        <ul>
+            <li><a href="#">Usuário</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Suporte</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="cadastroDeJogo">
+
+            <h2>Cadastro de Jogo</h2>
+
+            <div class="conteudoDoJogo">
+                <form>
+                    <label for="foto-perfil">Capa do Jogo:</label>
+                    <input type="file" id="foto-perfil" name="foto-perfil" accept="image/*">
+
+                    <label for="nota"> Nome do Jogo: </label>
+                    <input type="text">
+
+                    <label for="dataFinalizacao"> Data de Lançamento: </label>
+                    <input type="date" id="dataFinalizacao">
+
+                    <label for="opinião">Sinopse do Jogo: </label>
+                    <textarea id="campoDeTexto" rows="6"></textarea>
+
+                    <div class="btSalvarAvaliacao"><button type="submit">Salvar</button></div>
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="#"></script>
+</body>
+
+</html>
