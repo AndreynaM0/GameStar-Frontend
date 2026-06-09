@@ -13,20 +13,35 @@ body{
     font-family: "Cal Sans", sans-serif;
     background-color: #4D4D4D ;
     height: 100vh;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
-main{
+main {
+   width: 100%;
+   padding-top: 120px;
+}
+
+@media (max-height: 768px) {
+
+    .bloco_Login,
+    .bloco_cadastro{
+        transform: scale(0.8);
+    }
+
+}
+
+.main-auth{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding-top: 200px;
 }
  .navbar{
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100vw;
     align-items: center;
@@ -353,6 +368,7 @@ p a{
 .avaliacao_usuarios p{
     font-family: "DM Sans", sans-serif;
     color: #d6d6d6;
+
 }
 
 .nota_Avaliacao{
@@ -389,4 +405,34 @@ p a{
 .icone_estrela{
     width: 25px;
     height: 25px;
+}
+
+.icone_curtida{
+    width: 25px;
+    height: 25px;
+}
+.curtidasComentario{
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.avaliacoesDeJogadores{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.sessao_avaiacoesJogadores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+}
+
+.nomedoJogo{
+    margin-bottom: 15px;
 }
