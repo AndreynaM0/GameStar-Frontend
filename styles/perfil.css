@@ -126,140 +126,140 @@ header {
     border-radius: 3px;
 }
 
-.sessao_jogo{
-    width: 90%;
-    max-width: 1200px;
-    margin: 30px auto;
-    color: #fff;
-}
-
-.sessao_jogo h1{
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.informacoesDoJogo{
-    display: flex;
+.main-content {
+    display: grid;
+    grid-template-columns: 220px 1fr;
     gap: 40px;
-    align-items: flex-start;
 }
 
-.blocoEsquerdo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.infos h3 {
+    font-size: 16px;
+    color: #b0bec5;
+    margin-bottom: 15px;
+    font-weight: normal;
 }
 
-.capaDojogo{
-    width: 220px;
-    border-radius: 8px;
-    height: 300px;
-}
-
-.botaoAvaliar{
-    margin-top: 15px;
-    padding: 12px 30px;
-    text-decoration: none;
-    background-color: #FF4747;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: "DM Sans", sans-serif;
-}
-
-.botaoAvaliar:hover{
-    opacity: 0.9;
-}
-
-.blocoCentral{
-    flex: 1;
-}
-
-.sobre_Jogo{
+.content-section {
     margin-bottom: 40px;
 }
 
-.sobre_Jogo h2{
-    margin-bottom: 10px;
-}
-
-.sobre_Jogo p{
-    line-height: 1.6;
-    font-family: "DM Sans", sans-serif;
-}
-
-.avaliacoes h2{
-    margin-bottom: 20px;
-}
-
-.avaliacao{
+.section-title {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 8px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 15px;
-    margin-bottom: 15px;
-    background-color: #3d3d3d;
-    border-radius: 10px;
+    align-items: flex-end;
 }
 
-.avatar{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #d9d9d9;
-    flex-shrink: 0;
+.section-title span {
+    font-size: 12px;
+    color: #9e9e9e;
+    cursor: pointer;
 }
 
-.avaliacao_usuarios{
+.favorites-grid {
     display: flex;
     gap: 15px;
 }
 
-.avaliacao_usuarios h3{
-    margin-bottom: 5px;
+.game-card-large {
+    width: 110px;
+    height: 160px;
+    background-color: #212121;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
-.avaliacao_usuarios p{
-    font-family: "DM Sans", sans-serif;
-    color: #d6d6d6;
-
+.game-card-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.nota_Avaliacao{
-    text-align: center;
-    width: 60px;
-}
-
-.nota_Avaliacao span{
-    display: block;
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-}
-
-.coluna-direita{
-    width: 120px;
-    text-align: center;
-}
-
-.coluna-direita h2{
-    margin-bottom: 15px;
-}
-
-.notaGeral{
+.stats-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-size: 1.8rem;
+    gap: 60px;
+    margin: 25px 0;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #b0bec5;
+    margin-top: 5px;
+}
+
+.recent-grid {
+    display: flex;
+    gap: 12px;
+}
+
+.game-card-small {
+    width: 100px;
+}
+
+.game-card-small img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.game-info-mini {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #9e9e9e;
+    margin-top: 4px;
+}
+
+.game-info-mini .rating-red {
+    color: #ff5252;
+}
+
+.review-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.review-poster {
+    width: 80px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.review-details h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.review-meta {
+    font-size: 12px;
+    color: #b0bec5;
+    margin-bottom: 10px;
+}
+
+.review-meta .rating-red {
+    color: #ff5252;
     font-weight: bold;
 }
 
-.icone_estrela{
-    width: 25px;
-    height: 25px;
-}
-
-.nomedoJogo{
-    margin-bottom: 15px;
+.review-text {
+    font-size: 13px;
+    color: #e0e0e0;
+    line-height: 1.4;
 }

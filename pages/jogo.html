@@ -4,40 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/Jogo.css">
+    <link rel="stylesheet" href="../styles/jogo.css">
     <link rel="icon" type="image/png" href="../images/logo game star.png">
-    <title>GameStar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Jogo</title>
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="logomarca">
-            <img src="../images/logo game star.png" alt="Logo" class="logo">
-            <h1>GameStar</h1>
+    <header>
+        <a href="inicio.html" class="logo">
+            <i><img src="/images/logo game star.png" alt="Logo" class="logo"></i> GameStar
+        </a>
+        
+        <div class="pesquisa">
+            <input type="text" placeholder="Buscar...">
         </div>
-
-        <div class="barraDePesquisa">
-            <input type="text" placeholder="Buscar" id="barraDeBusca">
+        
+        <div class="nav">
+            <div class="usuario">
+                <img src="/images/user.png" alt="Avatar">
+                <a href="perfil.html" class="nav-paginas">
+                <span>Usuario568 <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></span>
+                </a>
+            </div>
+            <a href="#" class="nav-paginas">Sobre</a>
+            <a href="#" class="nav-paginas">Suporte</a>
         </div>
-
-        <ul>
-            <li><a href="#">Usuário</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Suporte</a></li>
-        </ul>
     </header>
 
     <main>
         <section class="sessao_jogo">
 
-            <h1>Nome do Jogo</h1>
-
+            <h1>(Nome do Jogo)</h1>
             <div class="informacoesDoJogo">
                 <div class="blocoEsquerdo">
-                    <img src="../images/logo game star.png" alt="DESCRIÇÃO_aLTERNATIVA" class="capaDojogo">
-
-                    <a href="../pages/cadastroAvaliacao.html" class="botaoAvaliar">Avaliar</a> 
+                    <img src="" alt="Capa do Jogo" class="capaDojogo">
+                    <a href="avaliar.html" class="botaoAvaliar">Avaliar</a>
+                    <a class="botaoAvaliar">Favoritar</a>
+                    <a class="botaoAvaliar">Excluir</a> <!-- apenas admin -->
                 </div>
 
                 <div class="blocoCentral">
@@ -45,105 +50,71 @@
                     <div class="sobre_Jogo">
                         <h2>Sobre o Jogo: </h2>
                         <p>
-                            LEGO Batman: Legacy of the Dark Knight é um jogo
-                            de ação e aventura ambientado no universo LEGO,
-                            trazendo diversos personagens da DC Comics.
+                            (Descrição sobre o Jogo)
                         </p>
                     </div>
 
                     <div class="avaliacoes">
                         <h2>Avaliações</h2>
 
-                  <div class="avaliacao">
-
+                        <div class="avaliacao">
                             <div class="avaliacao_usuarios">
-                                <div class="avatar"></div>
-
-
+                                <div class="avatar"><img src="/images/user.png" class="avatar"></div>
                                 <div>
-                                    <h3>User01</h3>
-
-                                    <p>
-                                        descrição da avaliação do jogador...
-                                    </p>
+                                    <h3>Andr3yn4_</h3>
+                                    <p>Que jogo bom!</p>
                                 </div>
-
-                                
                             </div>
-                            
                             <div class="nota_Avaliacao">
                                 <span>Nota</span>
                                 <strong>4,5</strong>
                             </div>
                         </div>
 
-
-                       <div class="avaliacao">
-
+                        <div class="avaliacao">
                             <div class="avaliacao_usuarios">
-                                <div class="avatar"></div>
-
-
+                                <div class="avatar"><img src="/images/user.png" class="avatar"></div>
                                 <div>
-                                    <h3>User02</h3>
-
-                                    <p>
-                                        descrição da avaliação do jogador...
-                                    </p>
+                                    <h3>França_83</h3>
+                                    <p>Esse jogo mudou minha vida!</p>
                                 </div>
-
-                                
                             </div>
-                            
                             <div class="nota_Avaliacao">
                                 <span>Nota</span>
-                                <strong>4,5</strong>
+                                <strong>5,0</strong>
                             </div>
                         </div>
 
 
                         <div class="avaliacao">
-
                             <div class="avaliacao_usuarios">
-                                <div class="avatar"></div>
-
-
+                                <div class="avatar"><img src="/images/user.png" class="avatar"></div>
                                 <div>
-                                    <h3>User03</h3>
-
-                                    <p>
-                                        descrição da avaliação do jogador...
-                                    </p>
+                                    <h3>R4fael</h3>
+                                    <p>meh!</p>
                                 </div>
-
-                                
                             </div>
-
                             <div class="nota_Avaliacao">
                                 <span>Nota</span>
-                                <strong>4,5</strong>
+                                <strong>3,0</strong>
                             </div>
                         </div>
 
                     </div>
-
                 </div>
 
                 <div class="coluna-direita">
                     <h2>Nota</h2>
                     <div class="notaGeral">
                         <img src="../images/hollywood-star.png" alt="Estrela" class="icone_estrela">
-                        <span>4,5</span>
+                        <span>4,0</span>
                     </div>
                 </div>
-
             </div>
-
-
         </section>
     </main>
-
     <script src="#"></script>
+
 </body>
 
 </html>

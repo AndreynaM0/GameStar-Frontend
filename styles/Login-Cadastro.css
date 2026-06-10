@@ -1,22 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    font-family: "Inter", sans-serif;
-    background-color: #4D4D4D ;
-    height: 100vh;  
+body {
+    background-color: #4a4a4a;
+    color: #ffffff;
 }
 
-main {
-   width: 100%;
-   padding-top: 120px;
+header {
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 50px;
+    height: auto;
+}
+
+.logo i {
+    color: #e50914;
+    font-size: 24px;
+}
+
+.pesquisa {
+    flex: 0 1 400px;
+}
+
+.pesquisa input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #555555;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.pesquisa input::placeholder {
+    color: #bbbbbb;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.usuario img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.nav-paginas {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-paginas:hover {
+    text-decoration: underline;
 }
 
 @media (max-height: 768px) {
@@ -32,47 +99,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding-top: 200px;
-}
-.navbar{
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #252525;
-    padding: 15px 30px;
-    font-family: "Cal Sans", sans-serif;
-    color: #fff;
-}
-
-.logomarca{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo{
-    width: 50px;
-    height: auto;
-}
-
-.navbar ul{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.navbar a{
-    color: #fff;
-    text-decoration: none;
+    height: 90vh;
+    padding: auto;
 }
 
 .bloco_Login{
     width: 500px;
-    height: 650px;
+    height: 50;
     background-color:#252525 ;
     border-radius: 25px;
     padding: 50px;
@@ -124,6 +157,7 @@ button {
     cursor: pointer;
     font-size: 1rem;
 }
+
 .containerBotao{
     display: flex;
     flex-direction: column;
