@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #4a4a4a;
+    color: #ffffff;
+}
+
+header {
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 50px;
+    height: auto;
+}
+
+.logo i {
+    color: #e50914;
+    font-size: 24px;
+}
+
+.pesquisa {
+    flex: 0 1 400px;
+}
+
+.pesquisa input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #555555;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.pesquisa input::placeholder {
+    color: #bbbbbb;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.usuario img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.nav-paginas {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-paginas:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.mensagem {
+    text-align: center;
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.mensagem strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #dddddd;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.listaJogos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+}
+
+.cardJogo {
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer;
+    aspect-ratio: 2 / 3;
+}
+
+.cardJogo:hover {
+    transform: scale(1.05);
+}
+
+.cardJogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.noticias {
+    display: flex;
+    background-color: #555555;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.imgNoticias {
+    flex: 0 0 35%;
+    max-height: 220px;
+}
+
+.imgNoticias img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.noticiasText {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.noticiasText h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.noticiasText p {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.5;
+}

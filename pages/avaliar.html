@@ -4,28 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/Cadastro-Avaliacao.css">
+    <link rel="stylesheet" href="../styles/avaliar.css">
     <link rel="icon" type="image/png" href="../images/logo game star.png">
-    <title>GameStar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Avaliar Jogo</title>
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="logomarca">
-            <img src="../images/logo game star.png" alt="Logo" class="logo">
-            <h1>GameStar</h1>
+    <header>
+        <a href="inicio.html" class="logo">
+            <i><img src="/images/logo game star.png" alt="Logo" class="logo"></i> GameStar
+        </a>
+        
+        <div class="pesquisa">
+            <input type="text" placeholder="Buscar...">
         </div>
-
-        <div class="barraDePesquisa">
-            <input type="text" placeholder="Buscar" id="barraDeBusca">
+        
+        <div class="nav">
+            <div class="usuario">
+                <img src="/images/user.png" alt="Avatar">
+                <a href="perfil.html" class="nav-paginas">
+                <span>Usuario568 <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></span>
+                </a>
+            </div>
+            <a href="#" class="nav-paginas">Sobre</a>
+            <a href="#" class="nav-paginas">Suporte</a>
         </div>
-
-        <ul>
-            <li><a href="#">Usuário</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Suporte</a></li>
-        </ul>
     </header>
 
     <main>
@@ -34,7 +39,7 @@
             <h2>Nome do Jogo</h2>
 
             <div class="conteudoDoJogo">
-                <img src="../images/logo game star.png" alt="DESCRIÇÃO_aLTERNATIVA" class="capaDojogo">
+                <img src="/images/sub2.jpg" alt="Capa do Jogo" class="capaDojogo">
                 <form>
                     <label for="nota"> Sua Nota</label>
                     <input type="number" id="nota" min="0" max="10">
@@ -45,8 +50,6 @@
                     <label for="status">Status</label>
                     <select id="statusJogo">
                         <option>Finalizado</option>
-                        <option>Jogando</option>
-                        <option>Pausado</option>
                         <option>Abandonado</option>
                     </select>
 
