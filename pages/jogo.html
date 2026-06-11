@@ -14,18 +14,18 @@
 
     <header>
         <a href="inicio.html" class="logo">
-            <i><img src="/images/logo game star.png" alt="Logo" class="logo"></i> GameStar
+            <i><img src="..//images/logo game star.png" alt="Logo" class="logo"></i> GameStar
         </a>
-        
+
         <div class="pesquisa">
             <input type="text" placeholder="Buscar...">
         </div>
-        
+
         <div class="nav">
             <div class="usuario">
-                <img src="/images/user.png" alt="Avatar">
+                <img src="..//images/user.png" alt="Avatar">
                 <a href="perfil.html" class="nav-paginas">
-                <span>Usuario568 <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></span>
+                    <strong> <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></strong>
                 </a>
             </div>
             <a href="#" class="nav-paginas">Sobre</a>
@@ -40,9 +40,9 @@
             <div class="informacoesDoJogo">
                 <div class="blocoEsquerdo">
                     <img src="" alt="Capa do Jogo" class="capaDojogo">
-                    <a href="avaliar.html" class="botaoAvaliar">Avaliar</a>
-                    <a class="botaoAvaliar">Favoritar</a>
-                    <a class="botaoAvaliar">Excluir</a> <!-- apenas admin -->
+                    <a href="#" id="btnAvaliar" class="botaoAvaliar">Avaliar</a>
+                    <a href="#" id="btnFavoritar" class="botaoAvaliar">Favoritar</a>
+                    <a class="botaoAvaliar" id="btnExcluirJogo">Excluir</a>
                 </div>
 
                 <div class="blocoCentral">
@@ -56,67 +56,28 @@
 
                     <div class="avaliacoes">
                         <h2>Avaliações</h2>
-
-                        <div class="avaliacao">
-                            <div class="avaliacao_usuarios">
-                                <div class="avatar"><img src="/images/user.png" class="avatar"></div>
-                                <div>
-                                    <h3>Andr3yn4_</h3>
-                                    <p>Que jogo bom!</p>
-                                </div>
-                            </div>
-                            <div class="nota_Avaliacao">
-                                <span>Nota</span>
-                                <strong>4,5</strong>
-                            </div>
+                        <div id="reviews-container">
                         </div>
-
-                        <div class="avaliacao">
-                            <div class="avaliacao_usuarios">
-                                <div class="avatar"><img src="/images/user.png" class="avatar"></div>
-                                <div>
-                                    <h3>França_83</h3>
-                                    <p>Esse jogo mudou minha vida!</p>
-                                </div>
-                            </div>
-                            <div class="nota_Avaliacao">
-                                <span>Nota</span>
-                                <strong>5,0</strong>
-                            </div>
-                        </div>
-
-
-                        <div class="avaliacao">
-                            <div class="avaliacao_usuarios">
-                                <div class="avatar"><img src="/images/user.png" class="avatar"></div>
-                                <div>
-                                    <h3>R4fael</h3>
-                                    <p>meh!</p>
-                                </div>
-                            </div>
-                            <div class="nota_Avaliacao">
-                                <span>Nota</span>
-                                <strong>3,0</strong>
-                            </div>
-                        </div>
-
                     </div>
-                </div>
 
-                <div class="coluna-direita">
-                    <h2>Nota</h2>
-                    <div class="notaGeral">
-                        <img src="../images/hollywood-star.png" alt="Estrela" class="icone_estrela">
-                        <span>4,0</span>
-                    </div>
                 </div>
+            </div>
+
+            <div class="coluna-direita">
+                <h2>Nota</h2>
+                <div class="notaGeral">
+                    <img src="../images/hollywood-star.png" alt="Estrela" class="icone_estrela">
+                    <span>4,0</span>
+                </div>
+            </div>
             </div>
         </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <script src="../services/api.js"></script>
-
+    <script src="../scripts/jogo.js"></script>
+    <script src="../scripts/barraPesquisa.js"></script>
 </body>
 
 </html>
