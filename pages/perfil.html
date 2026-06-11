@@ -12,7 +12,7 @@
 
     <header>
         <a href="inicio.html" class="logo">
-            <i><img src="/images/logo game star.png" alt="Logo" class="logo"></i> GameStar
+            <i><img src="..//images/logo game star.png" alt="Logo" class="logo"></i> GameStar
         </a>
         
         <div class="pesquisa">
@@ -21,9 +21,9 @@
         
         <div class="nav">
             <div class="usuario">
-                <img src="/images/user.png" alt="Avatar">
+                <img src="..//images/user.png" alt="Avatar">
                 <a href="perfil.html" class="nav-paginas">
-                <span>Usuario568 <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></span>
+                <strong><i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></strong>
                 </a>
             </div>
             <a href="#" class="nav-paginas">Sobre</a>
@@ -34,8 +34,9 @@
     <div class="container">
         
         <div class="perfil">
-            <img src="/images/user.png">
-            <h1 class="nomezinho">Usuario568</h1>
+            <img src="..//images/user.png">
+            <h1 class="nome">Usuario568</h1>
+            <button id="btnLogout" class="logout-btn">Sair da Conta</button>
         </div>
 
         <nav class="abas-perfil">
@@ -49,13 +50,13 @@
             <div class="infos">
                 <div class="stats">
                     <div class="stat-box">
-                        <div class="stat-number">153</div>
+                        <div class="stat-number"></div>
                         <div class="stat-label">Total de Jogos</div>
                     </div>
                     <br>
                     <div class="stat-box">
-                        <div class="stat-number">09</div>
-                        <div class="stat-label">Jogados em 2026</div>
+                        <div class="stat-number"></div>
+                        <div class="stat-label"></div>
                     </div>
                 </div>
 
@@ -77,27 +78,27 @@
                     <div class="recent-grid">
                         <div class="game-card-small">
                             <a href="jogo.html"><img src="" alt=""></a>
-                            <div class="game-info-mini"><span>Mai 04</span> <span class="rating-red">5/5</span></div>
+                            <div class="game-info-mini"><span></span> <span class="rating-red"></span></div>
                         </div>
                         <div class="game-card-small">
                             <a href="jogo.html"><img src="" alt=""></a>
-                            <div class="game-info-mini"><span>Abr 20</span> <span class="rating-red">5/5</span></div>
+                            <div class="game-info-mini"><span></span> <span class="rating-red"></span></div>
                         </div>
                         <div class="game-card-small">
                             <a href="jogo.html"><img src="" alt=""></a>
-                            <div class="game-info-mini"><span>Abr 05</span> <span class="rating-red">4/5</span></div>
+                            <div class="game-info-mini"><span></span> <span class="rating-red"></span></div>
                         </div>
                         <div class="game-card-small">
                             <a href="jogo.html"><img src="" alt=""></a>
-                            <div class="game-info-mini"><span>Mar 15</span> <span class="rating-red">3.5/5</span></div>
+                            <div class="game-info-mini"><span></span> <span class="rating-red"></span></div>
                         </div>
                         <div class="game-card-small">
                             <a href="jogo.html"><img src="" alt=""></a>
-                            <div class="game-info-mini"><span>Mar 08</span> <span class="rating-red">4.5/5</span></div>
+                            <div class="game-info-mini"><span></span> <span class="rating-red"></span></div>
                         </div>
                         <div class="game-card-small">
                             <a href="jogo.html"><img src="" alt=""></a>
-                            <div class="game-info-mini"><span>Mar 01</span> <span class="rating-red">5/5</span></div>
+                            <div class="game-info-mini"><span></span> <span class="rating-red"></span></div>
                         </div>
                     </div>
                 </div>
@@ -108,9 +109,9 @@
                     <div class="review-item">
                         <a href=""><img class="review-poster" src="" alt=""></a>
                         <div class="review-details">
-                            <h4>FIFA 19</h4>
-                            <div class="review-meta"><span class="rating-red">4/5</span> • Finalizado em Abril 05, 2026</div>
-                            <div class="review-text">Melhor modo carreira dos FIFAs, mas o modo Online deixa a desejar.</div>
+                            <h4>F</h4>
+                            <div class="review-meta"><span class="rating-red">4/5</span></div>
+                            <div class="review-text"></div>
                         </div>
                     </div>
 
@@ -119,9 +120,9 @@
                     <div class="review-item">
                         <a href=""><img class="review-poster" src="" alt=""></a>
                         <div class="review-details">
-                            <h4>UNDERTALE</h4>
-                            <div class="review-meta"><span class="rating-red">5/5</span> • Finalizado em Março 01, 2026</div>
-                            <div class="review-text">sans!</div>
+                            <h4></h4>
+                            <div class="review-meta"><span class="rating-red"></span></div>
+                            <div class="review-text"></div>
                         </div>
                     </div>
 
@@ -132,6 +133,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <script src="../services/api.js"></script>
-      <!-- coloquem o script aqui -->
+    <script src="../scripts/perfil.js"></script>
+    <script src="../scripts/barraPesquisa.js"></script>
 </body>
 </html>

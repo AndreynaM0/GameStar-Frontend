@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favoritos</title>
-    <link rel="stylesheet" href="/styles/favoritos.css">
-    <link rel="icon" href="/images/logo game star.png">
+    <link rel="stylesheet" href="../styles/favoritos.css">
+    <link rel="icon" href="..//images/logo game star.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
 <body>
 
     <header>
         <a href="inicio.html" class="logo">
-            <i><img src="/images/logo game star.png" alt="Logo" class="logo"></i> GameStar
+            <i><img src="../images/logo game star.png" alt="Logo" class="logo"></i> GameStar
         </a>
         
         <div class="pesquisa">
@@ -21,9 +21,9 @@
         
         <div class="nav">
             <div class="usuario">
-                <img src="/images/user.png" alt="Avatar">
+                <img src="../images/user.png">
                 <a href="perfil.html" class="nav-paginas">
-                <span>Usuario568 <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></span>
+                <strong><i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></strong>
                 </a>
             </div>
             <a href="#" class="nav-paginas">Sobre</a>
@@ -35,7 +35,7 @@
         
         <div class="perfil">
             <img src="/images/user.png">
-            <h1 class="nomezinho">Usuario568</h1>
+            <h1 class="nome">Usuario568</h1>
         </div>
 
         <nav class="abas-perfil">
@@ -47,21 +47,6 @@
         <h2 class="list-title">Favoritos de Usuario568</h2>
 
         <div class="games-grid">
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
-            <div class="game-card"><a href="jogo.html"><img src="" alt=""></a></div>
         </div>
 
         <footer class="pagination">
@@ -71,6 +56,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <script src="../services/api.js"></script>
-    <!-- colocar o script -->
+    <script src="../scripts/favoritos.js"></script>
+    <script src="../scripts/barraPesquisa.js"></script>
 </body>
 </html>
